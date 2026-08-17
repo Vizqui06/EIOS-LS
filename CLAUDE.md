@@ -53,11 +53,11 @@ afirmar pruebas ejecutadas si no se ejecutaron.
 ``` text
 /frontend        Interfaz y experiencia conversacional
 /backend         API, sesiones, reglas y seguridad
-/ia              Prompts, recuperación y orquestación LLM
-/conocimiento    Documentos, metadatos y versiones
+/chatbot         Prompts, recuperación y orquestación LLM
+/docs            Documentos, metadatos y versiones (constante crecimiento)
 /integraciones   Servicios institucionales autorizados
-/pruebas         Pruebas automatizadas
-/docs            Documentación extensa
+/pruebas         Pruebas automatizadas (APIs y otros servicios)
+/documentacion   Documentación extensa del prototipo (añade cada integración importante del repositorio; servirá como manual documental)
 ```
 
 Respetar la estructura real del repositorio si difiere.
@@ -186,7 +186,7 @@ pasar una implementación.
 ## Documentación
 
 Consultar `lineamientos.md` en `/docs` para la definición general del producto.
-Consultar `/docs` antes de modificar arquitectura, reglas,
+Consultar `/docs/lineamientos.md` antes de modificar arquitectura, reglas,
 integraciones, seguridad, flujos, datos, prompts o procesos de Labor
 Social. Mantener `CLAUDE.md` conciso. Las explicaciones extensas
-pertenecen a `/docs`.
+pertenecen a `/docs`
