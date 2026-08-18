@@ -1,0 +1,89 @@
+.panel-chat {
+  display: flex;
+  flex-direction: column;
+  background: var(--color-superficie);
+  border: 1px solid var(--color-linea);
+  border-radius: var(--radio-base);
+  height: 100%;
+  min-height: 420px;
+}
+
+.panel-chat__historial {
+  flex: 1;
+  padding: var(--espacio-3);
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  gap: var(--espacio-2);
+}
+
+.panel-chat__vacio {
+  color: var(--color-tinta-suave);
+  font-size: 0.95rem;
+}
+
+.panel-chat__turno {
+  background: var(--color-papel);
+  border-radius: var(--radio-base);
+  padding: var(--espacio-2);
+  max-width: 80%;
+  align-self: flex-start;
+}
+
+.panel-chat__turno p {
+  margin: 0;
+  line-height: 1.5;
+}
+
+.panel-chat__turno--alumno {
+  background: var(--color-acento-suave);
+  align-self: flex-end;
+}
+
+.panel-chat__aviso {
+  display: inline-block;
+  margin-top: var(--espacio-1);
+  font-size: 0.8rem;
+  color: var(--color-alerta);
+}
+
+.panel-chat__cargando {
+  color: var(--color-tinta-suave);
+  font-size: 0.9rem;
+}
+
+.panel-chat__error {
+  color: var(--color-alerta);
+  padding: 0 var(--espacio-3);
+  font-size: 0.9rem;
+}
+
+.panel-chat__formulario {
+  display: flex;
+  gap: var(--espacio-2);
+  padding: var(--espacio-2);
+  border-top: 1px solid var(--color-linea);
+}
+
+.panel-chat__formulario input {
+  flex: 1;
+  padding: var(--espacio-2);
+  border: 1px solid var(--color-linea);
+  border-radius: var(--radio-base);
+  font-size: 1rem;
+}
+
+.panel-chat__formulario button {
+  padding: var(--espacio-2) var(--espacio-3);
+  background: var(--color-tinta);
+  color: var(--color-superficie);
+  border: none;
+  border-radius: var(--radio-base);
+  cursor: pointer;
+  font-weight: 500;
+}
+
+.panel-chat__formulario button:disabled {
+  opacity: 0.6;
+  cursor: default;
+}

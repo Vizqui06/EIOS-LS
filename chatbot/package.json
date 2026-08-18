@@ -1,0 +1,17 @@
+{
+  "name": "eios-ls-chatbot",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Prompts, recuperacion documental y orquestacion del asistente de IA de Labor Social.",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "lint": "eslint \"**/*.ts\"",
+    "format": "prettier --write \"**/*.ts\""
+  },
+  "devDependencies": {
+    "@types/node": "^20.14.9",
+    "typescript": "^5.5.3"
+  }
+}

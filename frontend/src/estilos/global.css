@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600&family=Inter:wght@400;500;600&display=swap');
+
+:root {
+  /* Paleta: tinta institucional sobre papel frio, acento ambar de "compromiso". */
+  --color-papel: #f2f4f1;
+  --color-tinta: #16233d;
+  --color-tinta-suave: #3c4a63;
+  --color-linea: #d8dcd4;
+  --color-acento: #b8863b;
+  --color-acento-suave: #ead9b8;
+  --color-superficie: #ffffff;
+  --color-alerta: #a3402f;
+
+  --fuente-titular: 'Fraunces', Georgia, serif;
+  --fuente-cuerpo: 'Inter', system-ui, sans-serif;
+
+  --radio-base: 6px;
+  --espacio-1: 8px;
+  --espacio-2: 16px;
+  --espacio-3: 24px;
+  --espacio-4: 40px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: var(--color-papel);
+  color: var(--color-tinta);
+  font-family: var(--fuente-cuerpo);
+  -webkit-font-smoothing: antialiased;
+}
+
+button {
+  font-family: inherit;
+}
+
+button:focus-visible,
+input:focus-visible,
+textarea:focus-visible {
+  outline: 2px solid var(--color-acento);
+  outline-offset: 2px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+  }
+}
